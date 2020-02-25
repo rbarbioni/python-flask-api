@@ -5,13 +5,13 @@ DEBUG=false
 LOG_LEVEL="DEBUG"
 GUNICORN_THREADS=1
 GUNICORN_WORKERS=1
-DATABASE_URL="mysql+pymysql://api:api@localhost/api"
+DATABASE_URL="mysql+pymysql://api:api@localhost:3307/api"
 DATABASE_MIGRATION=true
 SWAGGER_URL="/api/docs"
 SWAGGER_FILE="swagger.json"
 
 [docker]
-DATABASE_URL="mysql+pymysql://api:api@db/api"
+DATABASE_URL="mysql+pymysql://api:api@db:3307/api"
 
 [production]
 DATABASE_URL="CONSIDER USING ENVIRONMENT VARIABLES FOR PRODUCTION"
