@@ -13,17 +13,15 @@ jobs:
     - uses: dschep/install-pipenv-action@v1
     - run: pipenv install --dev
       name: Pipenv dependencies install
-    - run: pipenv shell
-      name: Pipenv active shell
-    - run: make lint
+    - run: pipenv run lint
       name: Checking flake8 issues
-    - run: make test
+    - run: pipenv run test
       name: Running unit tests
     - run: make run/docker-compose-d
       name: Starting docker compose
     - run: sleep 10
       name: Sleeping docker compose services
-    - run: make test/integration
+    - run: pipenv run integration-test
       name: Running integration tests
     - run: docker-compose down
       name: Shutdown docker compose
