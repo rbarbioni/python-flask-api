@@ -39,6 +39,9 @@ run/docker:
 run/docker-compose:
 	docker-compose -f docker-compose.yml up --build
 
+run/docker-compose-d:
+	docker-compose -f docker-compose.yml up --build -d
+
 run/docker-compose-structure:
 	docker-compose -f docker-compose.yml up --scale py-api=0 -d
 
