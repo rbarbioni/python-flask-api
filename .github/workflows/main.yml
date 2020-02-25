@@ -13,6 +13,8 @@ jobs:
     - uses: dschep/install-pipenv-action@v1
     - run: pipenv install --dev
       name: Pipenv dependencies install
+    - run: pipenv shell
+      name: Pipenv active shell
     - run: make lint
       name: Checking flake8 issues
     - run: make test
