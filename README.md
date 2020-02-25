@@ -1,6 +1,8 @@
 # py-api
 Standard Flask project API and Database using tools and best practices.
 
+## Github Actions Status
+![CI](https://github.com/rbarbioni/python-flask-api/workflows/CI/badge.svg?branch=master)
 
 ## Application Checklist
 
