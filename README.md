@@ -1,4 +1,4 @@
-# py-api
+# py-flask-api
 Standard Flask project API and Database using tools and best practices.
 
 ## Github Actions Status
@@ -138,7 +138,7 @@ To learn more about Sentry, visit https://sentry.io
 Create a free Sentry account
 Passing as application arguments the Sentry DSN
 ```bash
-export SENTRY_DSN=https://0259ea45ee784c97a63e86894a0bc35c@sentry.io/YOUR-PROJECT-NUMBER
+export SENTRY_DSN=YOUR-SENTRY-DSN
 ```
 
 ## Contributors
