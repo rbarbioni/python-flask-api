@@ -7,10 +7,10 @@ Standard Flask project API and Database using tools and best practices.
 ## Application Checklist
 
 - [x] Python 3.6
+- [x] Flask
 - [x] SQLAlchemy
 - [x] Marshmallow
 - [x] Dynaconf
-- [x] Flask
 - [x] Blueprint
 - [x] Gunicorn
 - [x] Pipenv
